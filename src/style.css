@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Mario;
+    src: url('SuperMario256.ttf') format('woff2');
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    width: 100%;
+    background: url('./mario.png') no-repeat center center/cover;
+}
+
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#nav ul {
+    display: flex;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-family: 'Mario';
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+ul li {
+    list-style: none;    
+}
+
+#nav ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color:rgb(197, 224, 247);
+}
+
+.nav_item {
+    padding: 10px;
+}
+
+img {
+    height: 60px;
+}
+
+/* Body Section */
+#body {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#body h2 {
+    padding-left: 150px;
+    width: 1000px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 5rem;
+    color: white;
+    text-align: left;
+}
+
+.menu_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Mario';
+}
+
+.item img {
+    height: 300px;
+    margin-top: 20px;
+}
+
+#footer {    
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
