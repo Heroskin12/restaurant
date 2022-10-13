@@ -16,6 +16,8 @@ export default function menuLoad(goomBurger, koopasta, toadHole, lasagne) {
         return; // Menu is already loaded.
     }
 
+    const content = document.querySelector('#content');
+    content.style.height = 'auto';
     body.classList.add('menu');
     const menuItems = document.createElement('div');
     const item1 = document.createElement('div');

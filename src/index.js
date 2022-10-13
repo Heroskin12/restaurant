@@ -1,13 +1,16 @@
 // Dependency Imports
 import './style.css';
-import load, {consoley} from './pageLoad.js';
+import load from './pageLoad.js';
 import mushroom from './mushroom.png';
 import goomBurger from './goomburger2.jpg';
 import toadHole from './toadHole.jpg';
 import koopasta from './koopasta.jpg';
-import lasagne from './lasagne.jpeg'
+import lasagne from './lasagne.jpeg';
+import restaurant from './marioRestaurant.png';
+import marioWorld from './marioWorld.jpg';
 import menuLoad from './menu';
-import homeLoad from './homeLoad'
+import homeLoad from './home';
+import aboutLoad from './about';
 
 // Console Log Debugger Checks
 
@@ -21,13 +24,14 @@ homeLoad();
 // If Home Tab is Clicked
 const home = document.querySelector('.home');
 home.addEventListener('click', () => {
+    console.log('I reach here.')
     homeLoad();
 })
 
 // If About Tab is Clicked
 const about = document.querySelector('.about')
 about.addEventListener('click', () => {
-    aboutLoad();
+    aboutLoad(restaurant, marioWorld);
 })
 
 // If Menu Tab is Clicked

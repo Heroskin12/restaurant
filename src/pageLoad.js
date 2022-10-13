@@ -1,4 +1,4 @@
-export default function pageLoad(mushroom, goomBurger, lasagne, koopasta, toadHole) {
+export default function pageLoad(mushroom) {
 
     // Get the main html div.
     const contentDiv = document.querySelector('#content');
@@ -41,10 +41,6 @@ export default function pageLoad(mushroom, goomBurger, lasagne, koopasta, toadHo
     navItem3.classList.add('nav_item', 'menu');
     navItem3.textContent = "Menu";
     navList.appendChild(navItem3);
-
-    // Create Body Elements
-    const bodyTitle = document.createElement('h2');
-    bodyTitle.innerText = 'Come taste the finest delicacies that the Mushroom Kingdom has to offer...';
 
     // Create Footer Elements
     const footerP = document.createElement('p');
